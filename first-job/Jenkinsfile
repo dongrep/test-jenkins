@@ -1,0 +1,20 @@
+pipeline{
+  agent any
+  stages{
+    stage('Build'){
+        steps{
+            echo 'Building the project with Jenkinsfile 1'
+        }
+    }
+    stage('Test'){
+        steps{
+            echo 'Testing the project pipeline 1'
+        }
+    }
+    stage('Deploy'){
+        steps{
+            echo 'Deploying the project'
+        }
+    }
+  }
+}
