@@ -3,6 +3,7 @@ pipeline{
   stages{
     stage('Build'){
         steps{
+            publishChecks(name: 'Build', status: 'in_progress', summary: 'Building...')
             echo 'Building the project with Jenkinsfile 2'
         }
     }
